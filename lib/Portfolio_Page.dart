@@ -2,12 +2,6 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
-  runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: UltimatePortfolio(),
-  ));
-}
 
 class UltimatePortfolio extends StatefulWidget {
   const UltimatePortfolio({super.key});
