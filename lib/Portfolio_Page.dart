@@ -237,7 +237,7 @@ class _UltimatePortfolioState extends State<UltimatePortfolio>
                                   children: [
                                     _devBullet("Clean architecture & modular code"),
                                     _devBullet("State management (Provider / Riverpod)"),
-                                    _devBullet("Unit/widget testing & CI/CD pipelines"),
+                                    _devBullet("Unit/widget testing"),
                                     _devBullet("Performance optimization & accessibility"),
                                   ],
                                 ),
@@ -249,14 +249,15 @@ class _UltimatePortfolioState extends State<UltimatePortfolio>
                                     _smallChip("Flutter"),
                                     _smallChip("Dart"),
                                     _smallChip("Firebase"),
-                                    _smallChip("Riverpod"),
-                                    _smallChip("CI/CD"),
+                                    _smallChip("State Management"),
+                                    _smallChip("Python"),
+                                    _smallChip("C"),
                                   ],
                                 ),
                                 const SizedBox(height: 14),
                                 Row(
                                   children: [
-                                    _miniStat(kPrimary1, "3+ Apps shipped"),
+                                    _miniStat(kPrimary1, "3+ Apps Projects Done"),
                                     const SizedBox(width: 12),
                                     _miniStat(kPrimary2, "Fast iteration"),
                                   ],
@@ -292,7 +293,7 @@ class _UltimatePortfolioState extends State<UltimatePortfolio>
                         ),
                       ),
                       Expanded(
-                        child: HoverImage(asset: "assets/firebase.png", height: 250),
+                        child: HoverImage(asset: "assets/subin.jpg", height: 475),
                       ),
                     ],
                   );
@@ -308,10 +309,10 @@ class _UltimatePortfolioState extends State<UltimatePortfolio>
                 runSpacing: 30,
                 alignment: WrapAlignment.center,
                 children: const [
-                  TechIcon(name: "Dart", asset: "assets/firebase.png"),
-                  TechIcon(name: "Flutter", asset: "assets/firebase.png"),
+                  TechIcon(name: "Dart", asset: "assets/dart.png"),
+                  TechIcon(name: "Flutter", asset: "assets/flutter.png"),
                   TechIcon(name: "Firebase", asset: "assets/firebase.png"),
-                  TechIcon(name: "Python", asset: "assets/firebase.png"),
+                  TechIcon(name: "Python", asset: "assets/python.png"),
                 ],
               ),
             ),
@@ -342,17 +343,24 @@ class _UltimatePortfolioState extends State<UltimatePortfolio>
                     Column(
                       children: const [
                         EduCard(
-                          year: "2021 - 2025",
-                          title: "B.Sc. Computer Science",
-                          subtitle: "Tribhuvan University",
+                          year: "2nd Year",
+                          title: "Bachelor's in Informatation and Technology",
+                          subtitle: "Lincoln University",
                           details: "Relevant: Algorithms, Web & Mobile App development, DB systems.",
                         ),
                         SizedBox(height: 14),
                         EduCard(
+                          year: "2025",
+                          title: "Flutter FrameWork Training",
+                          subtitle: "Brodways INFOSYS",
+                          details: "Focus: Cross mobile app development, DART, FLUTTER, FIREBASE",
+                        ),
+                        SizedBox(height: 14),
+                        EduCard(
                           year: "2019",
-                          title: "High School (+2 Science)",
-                          subtitle: "Kathmandu Model College",
-                          details: "Focus: Physics, Maths, Computer Science",
+                          title: "High School (+2 Management)",
+                          subtitle: "Texas International College",
+                          details: "Focus: Management, Maths, Computer Science",
                         ),
                       ],
                     ),
@@ -364,9 +372,9 @@ class _UltimatePortfolioState extends State<UltimatePortfolio>
                         runSpacing: 20,
                         alignment: WrapAlignment.center,
                         children: const [
-                          CertificateCard(image: "assets/firebase.png"),
-                          CertificateCard(image: "assets/firebase.png"),
-                          CertificateCard(image: "assets/firebase.png"),
+                          CertificateCard(image: "assets/c1.png"),
+                          CertificateCard(image: "assets/c2.png"),
+                          CertificateCard(image: "assets/c3.png"),
                         ],
                       ),
                     ),
@@ -437,7 +445,7 @@ class _UltimatePortfolioState extends State<UltimatePortfolio>
                   const SizedBox(height: 18),
                   Divider(thickness: 1, color: Colors.grey[400]),
                   const SizedBox(height: 10),
-                  Text("© 2025 Subin Tamang", style: TextStyle(fontSize: 14, color: Colors.grey[600])),
+                  Text("© 2025 Subin Tamang | made with ❤️ and 🤖", style: TextStyle(fontSize: 14, color: Colors.grey[600])),
                 ],
               ),
             ),
@@ -571,7 +579,7 @@ class CertificateCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HoverImage(asset: image, height: 160);
+    return HoverImage(asset: image, height: 400);
   }
 }
 
@@ -612,25 +620,25 @@ class ProjectsSection extends StatelessWidget {
           ProjectCard(
             title: "Portfolio Website",
             description: "Responsive portfolio built with Flutter Web, Firebase hosting, and animations.",
-            image: "assets/firebase.png",
+            image: "assets/p1.png",
             link: "https://your-portfolio-link.com",
           ),
           ProjectCard(
             title: "Chat App",
             description: "Real-time messaging app using Firebase Auth, Firestore, and Cloud Messaging.",
-            image: "assets/firebase.png",
+            image: "assets/p2.png",
             link: "https://github.com/yourname/chatapp",
           ),
           ProjectCard(
             title: "E-Commerce App",
             description: "Cross-platform shopping app with cart, payments, and admin dashboard.",
-            image: "assets/firebase.png",
+            image: "assets/p3.png",
             link: "https://github.com/yourname/ecommerce",
           ),
           ProjectCard(
             title: "Task Manager",
             description: "A productivity app with Firebase backend, notifications, and cloud sync.",
-            image: "assets/firebase.png",
+            image: "assets/p4.png",
             link: "https://github.com/yourname/taskmanager",
           ),
         ],
