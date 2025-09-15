@@ -59,7 +59,7 @@ class _UltimatePortfolioState extends State<UltimatePortfolio>
   }
 
   Future<void> openGithub() async {
-    final uri = Uri.parse('https://github.com/yourname');
+    final uri = Uri.parse('https://github.com/Subin-hubs');
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
@@ -621,25 +621,25 @@ class ProjectsSection extends StatelessWidget {
             title: "Portfolio Website",
             description: "Responsive portfolio built with Flutter Web, Firebase hosting, and animations.",
             image: "assets/p1.png",
-            link: "https://your-portfolio-link.com",
+            link: "https://github.com/Subin-hubs",
           ),
           ProjectCard(
-            title: "Chat App",
+            title: "Facebook Clone App",
             description: "Real-time messaging app using Firebase Auth, Firestore, and Cloud Messaging.",
             image: "assets/p2.png",
-            link: "https://github.com/yourname/chatapp",
+            link: "https://github.com/Subin-hubs",
           ),
           ProjectCard(
-            title: "E-Commerce App",
-            description: "Cross-platform shopping app with cart, payments, and admin dashboard.",
+            title: "Bhansa gahr",
+            description: "Cross-platform for the Recipes and the Users chat with AI",
             image: "assets/p3.png",
-            link: "https://github.com/yourname/ecommerce",
+            link: "https://github.com/Subin-hubs",
           ),
           ProjectCard(
-            title: "Task Manager",
-            description: "A productivity app with Firebase backend, notifications, and cloud sync.",
+            title: "Aadan pradan",
+            description: "A productivity app with Firebase backend for the books exchange ",
             image: "assets/p4.png",
-            link: "https://github.com/yourname/taskmanager",
+            link: "https://github.com/Subin-hubs",
           ),
         ],
       ),
